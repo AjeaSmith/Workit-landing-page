@@ -1,98 +1,67 @@
-:root {
-    --clr-purple-200: hsl(276, 100%, 99%);
-    --clr-purple-300: hsl(271, 12%, 34%);
-    --clr-purple-400: hsl(273, 85%, 13%);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-    --clr-white: hsl(0, 0%, 100%);
-    --clr-green: hsl(150, 100%, 63%);
-
-    --ff-body: 'Manrope', sans-serif;
-    --ff-heading: 'Fraunces', serif;
-
-    --fs-body: 1.125rem;
-    --fs-heading-1: 5rem;
-    --fs-heading-2: 3.5rem;
-    --fs-heading-3: 2rem;
-
-}
-
-
-/* ------------------ */
-/* -----  RESET ----- */
-/* ------------------ */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Remove default margin */
-body,
 h1,
 h2,
 h3,
 h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
+h5,
+h6 {
+	font-family: "Fraunces", serif;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
+.shape {
+	background: radial-gradient(
+		175% 600px at 50% -30px,
+		hsl(273, 85%, 13%) 75%,
+		transparent 75%
+	);
+	height: 560px;
+}
+.hero-pattern,
+.hero-pattern-2 {
+	display: none;
+	position: absolute;
 }
 
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
+@media (min-width: 767px) {
+	.shape {
+		background: radial-gradient(
+			175% 540px at 50% -30px,
+			hsl(273, 85%, 13%) 75%,
+			transparent 75%
+		);
+		height: 540px;
+	}
+	.hero-pattern {
+		display: block;
+		top: 85px;
+		right: -106px;
+	}
+	.hero-pattern-2 {
+		display: block;
+		left: -230px;
+		top: 20px;
+	}
 }
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  font-family: 'Manrope', sans-serif;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-   scroll-behavior: auto;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+@media (min-width: 1439px) {
+	.shape {
+		background: radial-gradient(
+			175% 730px at 50% -30px,
+			hsl(273, 85%, 13%) 75%,
+			transparent 75%
+		);
+		height: 730px;
+	}
+	.hero-pattern {
+		display: block;
+		top: 150px;
+		right: -48px;
+	}
+	.hero-pattern-2 {
+		display: block;
+		left: -140px;
+		top: 60px;
+	}
 }
