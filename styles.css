@@ -9,59 +9,132 @@ h4,
 h5,
 h6 {
 	font-family: "Fraunces", serif;
+	font-weight: normal;
+}
+/* header {
+	color: #fff;
+	position: relative;
+	width: 100%;
+	height: 50vh;
+	overflow: hidden;
+}
+header .content {
+	position: relative;
+	z-index: 1;
+	margin: 0 auto;
+	max-width: 900px;
+	text-align: center;
 }
 
-.shape {
+header::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
 	background: radial-gradient(
-		175% 600px at 50% -30px,
+		200% 502px at 50% -30px,
 		hsl(273, 85%, 13%) 75%,
 		transparent 75%
 	);
-	height: 560px;
+}
+header::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: green;
+} */
+.wrapped {
+	position: relative;
+}
+.wrapped .spacer {
+	position: absolute;
+	z-index: -2;
+	width: 100%;
+	height: 80px;
+	background-color: hsl(276, 100%, 99%);
+	top: 363px;
+}
+#section1 {
+	height: 420px;
+	background-color: hsl(273, 85%, 13%);
+	clip-path: ellipse(100% 55% at 48% 44%);
+}
+
+#section2 {
+	background-color: hsl(276, 100%, 99%);
+	height: 320px;
+	clip-path: ellipse(100% 55% at 48% 44%);
+}
+header h1 {
+	max-width: 14ch;
+}
+.shape {
+	background: radial-gradient(
+		200% 740px at 50% -30px,
+		hsl(273, 85%, 13%) 75%,
+		transparent 75%
+	);
+	height: 650px;
 }
 .hero-pattern,
 .hero-pattern-2 {
 	display: none;
 	position: absolute;
 }
+.hero-img {
+	max-width: 514px;
+	top: 410px;
+}
 
 @media (min-width: 767px) {
 	.shape {
 		background: radial-gradient(
-			175% 540px at 50% -30px,
+			200% 768px at 50% -30px,
 			hsl(273, 85%, 13%) 75%,
 			transparent 75%
 		);
-		height: 540px;
+		height: 740px;
 	}
 	.hero-pattern {
 		display: block;
-		top: 85px;
+		top: 255px;
 		right: -106px;
 	}
 	.hero-pattern-2 {
 		display: block;
 		left: -230px;
-		top: 20px;
+		top: 70px;
+	}
+	.hero-img {
+		left: 150px;
 	}
 }
 @media (min-width: 1439px) {
+	header h1 {
+		font-size: 5rem;
+	}
 	.shape {
 		background: radial-gradient(
-			175% 730px at 50% -30px,
+			200% 890px at 50% -30px,
 			hsl(273, 85%, 13%) 75%,
 			transparent 75%
 		);
-		height: 730px;
+		height: 930px;
 	}
 	.hero-pattern {
 		display: block;
-		top: 150px;
+		top: 250px;
 		right: -48px;
 	}
 	.hero-pattern-2 {
 		display: block;
 		left: -140px;
-		top: 60px;
+		top: 100px;
+	}
+	.hero-img {
+		max-width: 767px;
+		top: 380px;
+		left: 350px;
 	}
 }
