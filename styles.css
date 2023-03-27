@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Manrope", sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -10,41 +17,8 @@ h5,
 h6 {
 	font-family: "Fraunces", serif;
 	font-weight: normal;
+	color: hsl(273, 85%, 13%);
 }
-/* header {
-	color: #fff;
-	position: relative;
-	width: 100%;
-	height: 50vh;
-	overflow: hidden;
-}
-header .content {
-	position: relative;
-	z-index: 1;
-	margin: 0 auto;
-	max-width: 900px;
-	text-align: center;
-}
-
-header::before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: radial-gradient(
-		200% 502px at 50% -30px,
-		hsl(273, 85%, 13%) 75%,
-		transparent 75%
-	);
-}
-header::before {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: green;
-} */
-
 #wrapped-sections {
 	position: relative;
 }
@@ -52,21 +26,19 @@ header::before {
 	position: absolute;
 	z-index: -2;
 	width: 100%;
-	height: 200px;
+	height: 350px;
 	background-color: hsl(276, 100%, 99%);
-	top: 40%;
+	top: 25%;
 }
 .section1 {
-	height: 481px;
-	background-color: hsl(273, 85%, 13%);
+	height: 30.106875rem;
 	clip-path: ellipse(150% 55% at 48% 44%);
 }
 
-#section2 {
-	background-color: hsl(276, 100%, 99%);
-	height: 320px;
-	clip-path: ellipse(100% 55% at 48% 44%);
+.section2 {
+	clip-path: ellipse(150% 55% at 48% 44%);
 }
+
 header h1 {
 	max-width: 14ch;
 }
@@ -86,9 +58,19 @@ header h1 {
 	margin: auto;
 }
 
-@media (min-width: 767px) {
-	.section1 {
+.number-header {
+	font-size: 1.75rem;
+}
+
+@media (min-width: 768px) {
+	.number-text {
+		max-width: 50ch;
+	}
+	#section1 {
 		height: 540px;
+	}
+	#wrapped-sections #spacer {
+		top: 35%;
 	}
 	#wrapped-sections .hero-pattern,
 	#wrapped-sections .hero-pattern-2 {
@@ -115,14 +97,14 @@ header h1 {
 	header h1 {
 		font-size: 5rem;
 	}
-	.hero-pattern {
+	#wrapped-sections .hero-pattern {
 		display: block;
 		top: 250px;
-		right: -48px;
+		right: -50px;
 	}
-	.hero-pattern-2 {
+	#wrapped-sections .hero-pattern-2 {
 		display: block;
-		left: -140px;
+		left: -150px;
 		top: 100px;
 	}
 	.hero-img {
