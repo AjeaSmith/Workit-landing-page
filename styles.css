@@ -7,6 +7,7 @@
 }
 body {
 	font-family: "Manrope", sans-serif;
+	font-size: 1rem;
 }
 
 h1,
@@ -20,6 +21,7 @@ h6 {
 	color: hsl(273, 85%, 13%);
 }
 #wrapped-sections {
+	overflow: hidden;
 	position: relative;
 }
 #wrapped-sections #spacer {
@@ -38,6 +40,10 @@ h6 {
 .section2 {
 	clip-path: ellipse(150% 55% at 48% 44%);
 }
+
+/* .section3 {
+	height: 30vh;
+} */
 
 header h1 {
 	max-width: 14ch;
@@ -70,7 +76,7 @@ header h1 {
 		height: 540px;
 	}
 	#wrapped-sections #spacer {
-		top: 35%;
+		top: 30%;
 	}
 	#wrapped-sections .hero-pattern,
 	#wrapped-sections .hero-pattern-2 {
@@ -91,11 +97,24 @@ header h1 {
 	}
 }
 @media (min-width: 1439px) {
+	.number-header {
+		font-size: 2rem;
+	}
+	.number-text {
+		max-width: 40ch;
+	}
 	.section1 {
 		height: 730px;
 	}
+	.section2 {
+		height: 30vh;
+	}
 	header h1 {
 		font-size: 5rem;
+	}
+	#wrapped-sections #spacer {
+		top: 48%;
+		height: 500px;
 	}
 	#wrapped-sections .hero-pattern {
 		display: block;
