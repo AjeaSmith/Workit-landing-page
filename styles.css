@@ -32,21 +32,37 @@ h6 {
 	background-color: hsl(276, 100%, 99%);
 	top: 25%;
 }
+
+header h1 {
+	max-width: 14ch;
+}
+
 .section1 {
 	height: 30.106875rem;
 	clip-path: ellipse(150% 55% at 48% 44%);
 }
 
 .section2 {
+	margin-bottom: 100px;
 	clip-path: ellipse(150% 55% at 48% 44%);
 }
-
-/* .section3 {
-	height: 30vh;
-} */
-
-header h1 {
-	max-width: 14ch;
+.section3 {
+	height: 80vh;
+}
+.section3 .img {
+	width: 281px;
+	top: 150px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.section3 .content {
+	width: 90%;
+	top: 380px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.section3 .content h2 {
+	font-size: 2rem;
 }
 
 /* Backgrounds and Patterns */
