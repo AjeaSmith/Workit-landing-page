@@ -625,6 +625,10 @@ video {
   width: 3rem;
 }
 
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -847,16 +851,15 @@ header h1 {
 
 .section3 .img {
   width: 281px;
-  top: 150px;
+  top: 170px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .section3 .content {
   width: 90%;
-  top: 380px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 254px;
+  left: 5%;
 }
 
 .section3 .content h2 {
@@ -889,7 +892,7 @@ header h1 {
     max-width: 50ch;
   }
 
-  #section1 {
+  .section1 {
     height: 540px;
   }
 
@@ -919,13 +922,13 @@ header h1 {
   }
 
   .section3 .img {
-    left: 200px;
+    left: 25%;
   }
 
   .section3 .content {
-    top: 304px;
+    top: 181px;
     width: 514px;
-    left: 490px;
+    left: 29%;
   }
 }
 
@@ -943,7 +946,7 @@ header h1 {
   }
 
   .section2 {
-    height: 30vh;
+    height: 40vh;
   }
 
   header h1 {
@@ -951,7 +954,7 @@ header h1 {
   }
 
   #wrapped-sections #spacer {
-    top: 48%;
+    top: 470px;
     height: 500px;
   }
 
