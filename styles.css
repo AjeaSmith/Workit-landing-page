@@ -90,6 +90,9 @@ header h1 {
 	.section1 {
 		height: 540px;
 	}
+	.section3 {
+		height: 90vh;
+	}
 	#wrapped-sections #spacer {
 		top: 350px;
 	}
@@ -116,7 +119,10 @@ header h1 {
 	.section3 .content {
 		top: 181px;
 		width: 514px;
-		left: 29%;
+		left: 30%;
+	}
+	.section3 .content p {
+		line-height: 28px;
 	}
 }
 @media (min-width: 1439px) {
@@ -132,6 +138,19 @@ header h1 {
 	.section2 {
 		height: 40vh;
 	}
+	.section3 {
+		height: 55vh;
+	}
+	.section3 .img {
+		top: 250px;
+		width: 477px;
+	}
+	.section3 .content {
+		width: 730px;
+		top: 200px;
+		left: 36%;
+	}
+
 	header h1 {
 		font-size: 5rem;
 	}
@@ -152,5 +171,11 @@ header h1 {
 	.hero-img {
 		width: 767px;
 		top: 680px;
+	}
+	.section3 .content h2 {
+		font-size: 3.5rem;
+	}
+	.section3 .content p {
+		line-height: 32px;
 	}
 }
