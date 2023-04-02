@@ -1,4 +1,5 @@
 {
+  "name": "workit-landing-page",
   "scripts": {
     "build": "vite build",
     "buildT": "tailwindcss -i ./styles.css -o ./dist/output.css",
