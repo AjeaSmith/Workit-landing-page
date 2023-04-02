@@ -1,9 +1,11 @@
 {
   "scripts": {
-    "build": "tailwindcss -i ./styles.css -o ./dist/output.css",
+    "build": "vite build",
+    "buildT": "tailwindcss -i ./styles.css -o ./dist/output.css",
     "watch": "tailwindcss -i ./styles.css -o ./dist/output.css --watch"
   },
   "devDependencies": {
-    "tailwindcss": "^3.2.7"
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.2.1"
   }
 }
